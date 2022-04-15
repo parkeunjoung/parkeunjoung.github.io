@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	alert("test");
 	// let entityMap = {
 	// 	'&': '&amp;',
 	// 	'<': '&lt;',
