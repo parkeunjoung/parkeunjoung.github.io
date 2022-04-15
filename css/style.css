@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*****
+
+Layout
+
+******/
+#load_contents{width:100%;}
+#wrap{height:100%;min-width:110rem;margin:0 auto;}
+#header{height:5rem;background-color:#ff9b17;}
+#container{display:flex;height:calc(100% - 13rem);min-height:50rem;}
+#nav_lnb{width:30rem;height:100%;overflow:auto;background-color:#ffbf7f;}
+#contents{width:100%;height:100%;padding:1.5rem;overflow:auto;}
+#footer{height:8rem;background-color:gray;}
+
+/* Header */
+.header_wrap{padding:1rem;}
+.header_wrap .logo{color:#fff;font-size:2.5rem;}
+.header_wrap .logo > img{display:inline-block;width:13rem;vertical-align:top;}
+.header_wrap .logo .title{display:inline-block;margin:-0.5rem 0 0 1rem;vertical-align:top;letter-spacing:0.3rem;font-size:2.2rem;}
+
+/* Navigation */
+.nav_wrap{padding:1.5rem;}
+.nav_wrap .nav_lst > li > strong, .nav_wrap .nav_lst > li > a{display:inline-block;line-height:2rem;vertical-align:top;font-size:1.4rem;}
+.nav_wrap .nav_lst.dep1 > li{margin:1rem 0;}
+.nav_wrap .nav_lst.dep1 > li > strong{font-weight:bold;}
+.nav_wrap .nav_lst.dep2{padding-left:1rem;}
+.nav_wrap .nav_lst.dep2 > li{margin:0.5rem 0;}
+
+/* Footer */
+.footer_wrap{padding:3rem 1rem;color:#fff;font-size:1.4rem;}
+
+/*****
+
+ELEMENTS
+
+******/
+/* Title */
+.grp_tit{font-size:2.5rem;}
+.ctgr_tit{padding-left:1rem;font-size:1.8rem;}
+
+/* List */
+.rule_lst{margin-bottom:2rem;padding-left:2rem;}
+.rule_lst > li:before{display:inline-block;margin-right:0.5rem;content:"-";}
+.rule_lst > li .tb{margin:1rem 0 2rem;}
+
+/* Table */
+.tb{table-layout:fixed;width:100%;max-width:100rem;}
+.tb > thead > tr > th{position:relative;height:3rem;border-top:1px solid #bbbbbb;border-bottom:2px solid #bbbbbb;background-color:#ededed;}
+.tb > thead > tr > th:not(:first-child):before{position:absolute;left:0;top:0.3rem;content:"|";}
+.tb > tbody > tr > td{height:3rem;padding:0.5rem 1rem;border-bottom:1px solid #bbbbbb;text-align:left;}
+.tb > tbody > tr > td b{color:#ff0000;font-weight:normal;}
+.tb > tbody > tr > td i{color:#7f7f7f;font-weight:normal;}
+
+/* Example */
+.ex{display:inline-block;margin-top:0.5rem;padding:0.3rem 0.8rem;background-color:#a2f0ca;border-radius:0.8rem;}
+
+/* Accent */
+.accent{display:inline-block;background-color:#fbedb8;}
+
+/* Link */
+.link{display:inline-block;text-decoration:underline;color:#3e588d;}
+
+/*****
+
+HIGHLIGHTJS
+
+******/
+/* for block of numbers */
+pre code.hljs{
+	max-width:100rem;
+}
+.hljs-ln-numbers {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	text-align: center;
+	color: #ccc;
+	border-right: 1px solid #CCC;
+	vertical-align: top;
+	padding-right: 5px;
+
+	/* your custom style here */
+}
+
+/* for block of code */
+.hljs-ln-code {
+	padding-left: 10px;
+}

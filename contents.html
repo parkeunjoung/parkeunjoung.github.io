@@ -1,0 +1,1011 @@
+<main id="contents">
+	<div class="cont_wrap">
+		<h2 class="grp_tit">1 .네이밍룰</h2>
+		<h3 class="ctgr_tit" id="naming_1_1">1.1 기본규칙</h3>
+		<ul class="rule_lst">
+			<li>이름은 소문자, 숫자, 언더바(_)로 작성한다.</li>
+			<li>이름의 시작은 소문자로 시작할 수 있다.</li>
+			<li>style은 외부선언(css파일) 방식을 기본으로 하고, 특수한 상황에서만 내부선언, 인라인 선언 방식을 사용한다.</li>
+		</ul>
+		<h3 class="ctgr_tit" id="naming_1_2">1.2 레이아웃 작성규칙</h3>
+		<ul class="rule_lst">
+			<li>레이아웃을 구성하는 요소(영역별 최상위)에는 id값으로 작성한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>영역</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>#wrap</td>
+							<td>HTML문서 최상위</td>
+						</tr>
+						<tr>
+							<td>#header</td>
+							<td>상단영역</td>
+						</tr>
+						<tr>
+							<td>#container</td>
+							<td>중간영역</td>
+						</tr>
+						<tr>
+							<td>#nav_gnb | #nav_lnb</td>
+							<td>네비게이션 부모영역<br>#gnb와 #lnb 영역에 각각 #nav_gnb, #nav_lnb로 감싸준다.</td>
+						</tr>
+						<tr>
+							<td>.gnb</td>
+							<td>글로벌 네비게이션 영역</td>
+						</tr>
+						<tr>
+							<td>.lnb</td>
+							<td>로컬 네비게이션 영역</td>
+						</tr>
+						<tr>
+							<td>#contents</td>
+							<td>컨텐츠 영역</td>
+						</tr>
+						<tr>
+							<td>#footer</td>
+							<td>하단영역</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="ex">그림1) 레이아웃 구조</span><br><br>
+				<img src="/images/layout.png" alt="레이아웃 구조" />
+				<br>
+				<br>
+			</li>
+			<li>팝업 레이아웃을 구성하는 요소(영역별 최상위)에는 id값으로 작성한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>영역</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>#modal_wrap</td>
+							<td>팝업영역 최상위</td>
+						</tr>
+						<tr>
+							<td>#modal_header</td>
+							<td>상단영역</td>
+						</tr>
+						<tr>
+							<td>#modal_container</td>
+							<td>중간영역</td>
+						</tr>
+						<tr>
+							<td>#modal_contents</td>
+							<td>컨텐츠 영역</td>
+						</tr>
+						<tr>
+							<td>#modal_footer</td>
+							<td>하단영역</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>레이아웃에 디자인 속성을 추가/변경하려면 id와 동일한 이름으로 class를 사용한다.<br>
+				<img src="/images/layout02.png" alt="레이아웃영역 class선언" />
+				<br>
+				<br>
+			</li>
+			<li>컨텐츠 영역에는 페이지별 유니크한 클래스명을 작성해준다.<br>
+			<span class="ex">예) 상담목록</span>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>작성법</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+<pre>
+<code class="html">
+<div id="contents" class="cnsl_lst"></div>
+</code>
+</pre>
+							</td>
+							<td>id="contents" 영역에 화면을 구분할수있는 클래스명을 작성해준다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="naming_1_3">1.3 클래스 작성규칙</h3>
+		<ul class="rule_lst">
+			<li>이름은 가시적으로 이해할 수 있도록 작성한다.</li>
+			<li>이름은 두 단어의 조합을 언더바(_)로 구분하여 작성한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cnslLst</td>
+							<td>cnsl<b>_</b>lst</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>개체형태 중 아래의 경우의 한해 축약어로 작성한다.<br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>기본형</th>
+							<th>축약어</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>layer</td>
+							<td>lyr</td>
+						</tr>
+						<tr>
+							<td>category</td>
+							<td>ctgr</td>
+						</tr>
+						<tr>
+							<td>group</td>
+							<td>grp</td>
+						</tr>
+						<tr>
+							<td>type</td>
+							<td>typ</td>
+						</tr>
+						<tr>
+							<td>box</td>
+							<td>bx</td>
+						</tr>
+						<tr>
+							<td>list</td>
+							<td>lst</td>
+						</tr>
+						<tr>
+							<td>title</td>
+							<td>tit</td>
+						</tr>
+						<tr>
+							<td>text</td>
+							<td>txt</td>
+						</tr>
+						<tr>
+							<td>tab</td>
+							<td>tab</td>
+						</tr>
+						<tr>
+							<td>accordion</td>
+							<td>accrdn</td>
+						</tr>
+						<tr>
+							<td>search</td>
+							<td>srch</td>
+						</tr>
+						<tr>
+							<td>icon</td>
+							<td>icn</td>
+						</tr>
+						<tr>
+							<td>tooltip</td>
+							<td>tooltip</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>기타 다른 개체의 이름은 축약하지 않고 작성한다.</li>
+		</ul>
+		<h3 class="ctgr_tit" id="naming_1_4">1.4 요소 클래스 작성규칙</h3>
+		<ul class="rule_lst">
+			<li>Element(요소)에 class사용시 아래의 경우의 한해 축약어로 작성한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>기본형</th>
+							<th>축약어</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>button</td>
+							<td>btn</td>
+						</tr>
+						<tr>
+							<td>table</td>
+							<td>tb</td>
+						</tr>
+						<tr>
+							<td>checkbox</td>
+							<td>chk</td>
+						</tr>
+						<tr>
+							<td>radio</td>
+							<td>rdo</td>
+						</tr>
+						<tr>
+							<td>form</td>
+							<td>frm</td>
+						</tr>
+						<tr>
+							<td>textarea</td>
+							<td>txtara</td>
+						</tr>
+						<tr>
+							<td>input type="text"</td>
+							<td>ip_txt</td>
+						</tr>
+						<tr>
+							<td>input type="password"</td>
+							<td>ip_psswd</td>
+						</tr>
+						<tr>
+							<td>input type="file"</td>
+							<td>ip_file</td>
+						</tr>
+						<tr>
+							<td>input type="number"</td>
+							<td>ip_num</td>
+						</tr>
+						<tr>
+							<td>input type="tel"</td>
+							<td>ip_tel</td>
+						</tr>
+						<tr>
+							<td>input type="search"</td>
+							<td>ip_srch</td>
+						</tr>
+						<tr>
+							<td>select</td>
+							<td>selbx</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>모든 요소에는 class명을 반드시 작성한다. <span class="accent">단, 종속적인 구조</span>를 갖는 요소에는 예외로 한다.<br>
+				<span class="ex">예) 종속적인 요소 : ul, ol, li | table, thead, tbody, tfoot, tr, th, td | dl dt dd | fildset, legend 등</span><br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+
+							</td>
+							<td>lyr</td>
+						</tr>
+						<tr>
+							<td>category</td>
+							<td>ctgr</td>
+						</tr>
+						<tr>
+							<td>group</td>
+							<td>grp</td>
+						</tr>
+						<tr>
+							<td>type</td>
+							<td>typ</td>
+						</tr>
+						<tr>
+							<td>box</td>
+							<td>bx</td>
+						</tr>
+						<tr>
+							<td>list</td>
+							<td>lst</td>
+						</tr>
+						<tr>
+							<td>title</td>
+							<td>tit</td>
+						</tr>
+						<tr>
+							<td>text</td>
+							<td>txt</td>
+						</tr>
+						<tr>
+							<td>tab</td>
+							<td>tab</td>
+						</tr>
+						<tr>
+							<td>accordion</td>
+							<td>accrdn</td>
+						</tr>
+						<tr>
+							<td>
+<pre>
+<code class="html">
+<ul>
+	<li></li>
+</ul>
+</code>
+</pre>
+							</td>
+							<td>
+<pre>
+<code class="html">
+<ul class="info_bx">
+	<li></li>
+</ul>
+</code>
+</pre>
+or
+<br>
+<pre>
+	<code class="html">
+<ul class="info_bx">
+	<li class="info_txt"></li>
+	<li class="info_txt"></li>
+</ul>
+	</code>
+</pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>기타 다른 개체의 이름은 축약하지 않고 작성한다.</li>
+		</ul>
+		<h2 class="grp_tit">2.HTML 작성규칙</h2>
+		<h3 class="ctgr_tit" id="html_2_1">2.1 기본규칙</h3>
+		<ul class="rule_lst">
+			<li>들여쓰기는 Tab(space2)문자를 사용한다.</li>
+			<li>태그 및 속성은 소문자로 작성한다.</li>
+			<li>속성을 정의할 경우에는 <span class="accent">""(큰 따옴표)</span>를 사용한다.</li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_2">2.2 문서형식</h3>
+		<ul class="rule_lst">
+			<li>브라우저 Document Type은 HTML5 DOCTYPE으로 작성하고, 아래 html문서를 기본형식으로 갖는다.<br><br>
+<pre><code class="html">
+&lt;!DOCTYPE html> &lt;!-- HTML5 DOCTYPE -->
+&lt;html lang="ko"> &lt;!-- lang 속성을 반드시 명시 -->
+&lt;head>
+&lt;meta charset="UTF-8"> &lt;!-- 문자 인코딩은 유니코드 기반으로 하위 호환이 뛰어나 가장 널리 쓰이는 UTF-8을 권장 -->
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"> &lt;!-- 인터넷 익스플로러에서 매번 다르게 렌더링 되는 것을 방지하기 위해 최신 Edge모드를 사용 -->
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> &lt;!-- viewport는 기본 형식을 사용 -->
+&lt;!-- 모바일의 경우 리사이징 방지 및 디바이스 너비를 최대로 갖는 meta형식을 기본으로 함. -->
+&lt;!-- &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+&lt;/head>
+&lt;body>
+
+&lt;/body>
+&lt;/html>
+</code>
+</pre>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_3">2.3 Boolean 정의</h3>
+		<ul class="rule_lst">
+			<li>Boolean 속성은 값을 따로 명시하지 않는다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;input type="text" disabled="true"></td>
+							<td>&lt;input type="text" <b>disabled</b>></td>
+						</tr>
+						<tr>
+							<td>&lt;input type="checkbox" checked="true"></td>
+							<td>&lt;input type="text" <b>checked</b>></td>
+						</tr>
+						<tr>
+							<td>
+								&lt;select>
+									&lt;option value="1" selected="true">1&lt;/option>
+								&lt;/select>
+							</td>
+							<td>
+								&lt;select>
+								&lt;option value="1" <b>selected</b>>1&lt;/option>
+								&lt;/select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_4">2.4 목적에 맞는 HTML 태그 사용</h3>
+		<ul class="rule_lst">
+			<li>html은 의미에 맞는 시멘틱 마크업(Semantic Markup)을 한다.<a href="https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%A7%A8%ED%8B%B1_%EC%9B%B9" target="_blank" class="link">참조</a></li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_5">2.5 엔티티 문자</h3>
+		<ul class="rule_lst">
+			<li><span class="accent">&lt;, &gt;, &amp;</span>에 한해 엔티티 이름<span class="accent">(&amp;lt;, &amp;gt;, &amp;amp;)</span>을 사용한다. 기타 다른 특수문자는 엔티티를 사용하지 않는다.</li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_6">2.6 주석</h3>
+		<ul class="rule_lst">
+			<li>주석의 시작은 <span class="accent">S:</span>로 종료는 <span class="accent">E:</span>으로 시작하고 주석내용은 영문일 경우 대문자를 사용한다.<br><br>
+<pre><code class="html">
+<!-- S:WRAP -->
+<section id="wrap">
+	<!-- S:HEADER -->
+	<div id="header"></div>
+	<!-- E:HEADER -->
+	<!-- S:CONTAINER -->
+	<div id="container">
+		<!-- S:NAVIGATION -->
+		<div id="nav_lnb"></div>
+		<!-- E:NAVIGATION -->
+		<!-- S:CONTENTS -->
+		<div id="contents"></div>
+		<!-- E:CONTENTS -->
+	</div>
+	<!-- E:CONTAINER -->
+	<!-- S:FOOTER -->
+	<div id="footer"></div>
+	<!-- E:FOOTER -->
+</section>
+<!-- E:WRAP -->
+</code>
+</pre>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_7">2.7 자바스크립트 작성</h3>
+		<ul class="rule_lst">
+			<li>자바스크립트는 html 요소에 직접 이벤트 선언하는 방식은 지양한다.<br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+<pre><code class="html">
+<button type="button" onclick="clickHandler">Click</button>
+</code>
+</pre>
+						</td>
+							<td>
+<pre><code class="html">
+<button type="button" id="click_btn">Click</button>
+</code>
+</pre>
+<pre><code class="js">
+let btn = document.querySelector("#click_btn");
+btn.addEventListener("click",function(){
+	alert("click!!!");
+});
+</code>
+</pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="html_2_8">2.8 외부파일 정의</h3>
+		<ul class="rule_lst">
+			<li><span class="accent">&lt;link></span>와 <span class="accent">&lt;scirpt></span>에 type을 정의하지 않는다.<br><br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+<pre><code class="html">
+&lt;link type="text/css" rel="stylesheet" href="./css/common.css">
+&lt;script type="text/javascript" src="./js/ui.js">&lt;/script>
+</code>
+</pre>
+							</td>
+							<td>
+<pre><code class="html">
+&lt;link rel="stylesheet" href="./css/common.css">
+&lt;script src="./js/ui.js">&lt;/script>
+</code>
+</pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>css파일은 상단 &lt;head>&lt;/head>안에 작성</li>
+			<li>javascript파일은 하단 &lt;/body>바로 위에 작성한다.<br><br>
+<pre><code class="html">
+&lt;!DOCTYPE html>
+&lt;html lang="ko">
+&lt;head>
+&lt;meta charset="UTF-8">
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+	&lt;!-- css 작성영역 -->
+	&lt;link ref="stylesheet" href="style.css">
+&lt;/head>
+&lt;body>
+	&lt;!-- js 작성영역 -->
+	&lt;script src="ui.js">&lt;/script>
+&lt;/body>
+&lt;/html>
+</code>
+</pre>
+			</li>
+		</ul>
+		<h2 class="grp_tit">3.CSS 작성규칙</h2>
+		<h3 class="ctgr_tit" id="css_3_1">3.1 기본규칙</h3>
+		<ul class="rule_lst">
+			<li>모든 속성은 영문 소문자로만 작성한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>body{BACKGROUN-COLOR:#ff00ff}</td>
+							<td>body{<b>background-color</b>:#ff00ff}</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>공백이 포함된 폰트명, 한글 폰트명, 문자열 데이터 타입, filter 속성의 파라미터값은 작은 따옴표(<span class="accent">''</span>)로 감싸며,<br>@charset선언시 또는 속성으로 선택자를 명시할 경우에만 큰 따옴표(<span class="accent">""</span>)로 감싸고 그 외에는 따옴표를 사용하지 않는다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>body{font-family:돋움,sans-serif;}</td>
+							<td>body{font-family:<b>'돋움'</b>,sans-serif;}</td>
+						</tr>
+						<tr>
+							<td>@charset 'utf-8'</td>
+							<td>@charset <b>"utf-8"</b></td>
+						</tr>
+						<tr>
+							<td>input[class*=ip_]<br>or<br>input[class*='ip_']</td>
+							<td>input[class*=<b>"ip_"</b>]</b></td>
+						</tr>
+						<tr>
+							<td>content:"-"</td>
+							<td>content:<b>'-'</b></td>
+						</tr>
+						<tr>
+							<td>background:url("bg_dim") no-repeat 0 0;</td>
+							<td>background:url<b>(bg_dim)</b> no-repeat 0 0;</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>선택자 깊이는 4단계 이상 선언하지 않는다. 단, 부모 선택자를 표시해야 할 경우 <span class="accent">꼭 필요한 경우</span>에만 작성한다.</li>
+			<li>다중 선택자(Multi Class)를 사용할 경우 3단계 이상 선언하지 않는다.</li>
+			<li>레이아웃의 경우 flex속성을 사용하고, 여의치 않은 상황에서만 float속성을 사용한다.</li>
+		</ul>
+		<h3 class="ctgr_tit" id="css_3_2">3.2 공백</h3>
+		<ul class="rule_lst">
+			<li>들여쓰기는 Tab(space2)문자를 사용한다.</li>
+			<li>style 작성시 <span class="accent">{} 닫힘괄호</span>를 기준으로 개행처리 한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+<pre><code class="css">
+.header_wrap{padding:1rem;} .header_wrap .logo{color:#fff;font-size:2.5rem;}
+</code>
+</pre>
+							</td>
+							<td>
+<pre><code class="css">
+.header_wrap{padding:1rem;}
+.header_wrap .logo{color:#fff;font-size:2.5rem;}
+</code>
+</pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>부모와 자식을 구분하는 경우를 제외하고 모든 개행과 공백을 제거한다. <span class="accent">단, 다중 선택자를 선언할 경우 ,(쉼표)를 기준으로 개행</span>처리할 수 있다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+<pre><code class="css">
+.header_wrap {padding : 1rem;}
+.header_wrap .logo{color : #fff; font-size : 2.5rem;}
+</code>
+</pre>
+							</td>
+							<td>
+<pre><code class="css">
+/* 선택자와 대괄호 사이 */
+.header_wrap{padding:1rem;}
+/* :(콜론) 좌우사이, ;(세미콜론) 좌우사이 */
+.header_wrap .logo{color:#fff;font-size:2.5rem;}
+</code>
+</pre>
+							</td>
+						</tr>
+						<tr>
+							<td>
+<pre><code class="css">
+.header_wrap {
+	padding:1rem;
+}
+.header_wrap .logo,
+.header_wrap .tit{
+	color:#fff;
+	font-size:2.5rem;
+}
+</code>
+</pre>
+							</td>
+							<td>
+<pre><code class="css">
+.header_wrap{padding:1rem;}
+.header_wrap .logo,
+.header_wrap .tit{color:#fff;font-size:2.5rem;}
+</code>
+</pre>
+or
+<br>
+<br>
+<pre><code class="css">
+.header_wrap{padding:1rem;}
+.header_wrap .logo, .header_wrap .tit{color:#fff;font-size:2.5rem;}
+</code>
+</pre>
+							</td>
+						</tr>
+						<tr>
+							<td>
+<pre><code class="css">
+a, button, label{outline:none;}
+</code>
+</pre>
+							</td>
+							<td>
+<pre><code class="css">
+/* 다중 선택자 사이 */
+a,button,label{outline:none;}
+</code>
+</pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="css_3_3">3.3 주석</h3>
+		<ul class="rule_lst">
+			<li>큰 단락의 주석과 작은 단락의 주석을 작성해준다. 영문의 경우 큰 단락은 전체 대문자, 작은 단락은 단어의 첫번째 글자를 대문자로 작성한다. 작성방식은 아래와 같다.<br>
+			<span class="ex">예) 큰 단락(별 다섯개, 개행, 영문대문자, 한글작성 가능)</span><br><br>
+<pre><code class="css">
+/*****
+
+ELEMENTS
+
+******/
+</code>
+</pre>
+				<span class="ex">예) 작은 단락(한줄로 작성, 영문 첫글자 대문자, 한글작성 가능)</span><br><br>
+<pre><code class="css">
+/* Table */
+</code>
+</pre>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="css_3_4">3.4 빈줄</h3>
+		<ul class="rule_lst">
+			<li>주석을 기준으로 <span class="accent">한 줄의 빈줄</span>을 넣어준다.<br><br>
+<pre><code class="css">
+/* Navigation */
+.nav_wrap{padding:1.5rem;}
+==> 빈줄
+/*****
+
+ELEMENTS
+
+******/
+/* Title */
+.grp_tit{font-size:2.5rem;}
+.ctgr_tit{padding-left:1rem;font-size:1.8rem;}
+==> 빈줄
+/* List */
+.rule_lst{margin-bottom:2rem;padding-left:2rem;}
+.rule_lst > li:before{display:inline-block;margin-right:0.5rem;content:"-";}
+</code>
+</pre>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="css_3_5">3.5 폰트</h3>
+		<ul class="rule_lst">
+			<li>기본폰트는 맑은고딕으로 하되, 웹폰트를 우선 적용할 수 있다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>잘못된 예</th>
+							<th>올바른 예</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>body{font-family:,'Malgun Gothic','맑은 고딕','Open Sans',sans-serif;}</td>
+							<td>body{font-family:<b>'Open Sans'</b>,'Malgun Gothic','맑은 고딕',sans-serif;}</td>
+						</tr>
+						<tr>
+							<td>body{font-family:'Open Sans',dotum,"돋움",sans-serif;}</td>
+							<td>body{font-family:'Open Sans',<b>'Malgun Gothic','맑은 고딕'</b>,sans-serif;}</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+			<li>기본 단위는 <span class="accent">rem</span>으로 사용한다. 단, background나 백분율로 처리해야 하는 경우 <span class="accent">%</span>를 사용할 수 있다.<br>px단위로 수치값을 가시화하기 위해 <span class="accent">html에 font-size:10px</span>로 작성 후 사용한다.<br><br>
+<pre><code class="css">
+/* common.css */
+html{font-size:10px;}
+/* style.css */
+div{font-size:1.2rem;} /* font-size:12px; 와 동일 */
+</code></pre>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="css_3_6">3.6 속성 작성 순서</h3>
+		<ul class="rule_lst">
+			<li>속성을 작성할 경우 <span class="accent">노출여부, 위치</span>를 나타내는 속성을 맨 앞에 작성하고<br>
+				<span class="accent">크기, 여백</span>에 영향을 주는 속성은 다음으로,	<span class="accent">나머지</span>는 순서와 상관없이 마지막에 선언한다.<br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>순서</th>
+							<th>대표 속성</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>display,visibility,overflow,float,position,top,right,bottom,left,z-index</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>width(min,max),height(min,max),margin,padding,border</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>background,font관련 등</td>
+						</tr>
+						<tr>
+							<td>prefix</td>
+							<td>
+								<i>* 벤더속성과 핵속성은 해당 속성 뒤에 선언</i><br>
+								div{box-sizing:border-box;<b>-webkit-box-sizing:border-box;-moz-box-sizing:border-box;</b>}</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h4 class="ctgr_tit" id="css_3_7">3.7 확장</h4>
+		<ul class="rule_lst">
+			<li>유형은 같으나 style이 다를경우 확장방식을 사용한다.
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>기본형</th>
+							<th>확장형</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>info_text</td>
+							<td>info_text_typ1, info_text_typ2</td>
+							<td>종속 확장 class</td>
+						</tr>
+						<tr>
+							<td>selectbox</td>
+							<td>selectbox1, selectbox2</td>
+							<td>독립 확장 class</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h4 class="ctgr_tit" id="css_3_8">3.8 파일 분기</h4>
+		<ul class="rule_lst">
+			<li>css파일은 관리의 효율성을 위해 분기하여 관리한다.</li>
+			<li>초기화를 위한 style은 <a href="/css/files/common.css" target="_blank" class="link">common.css</a>에 분기한다.</li>
+			<li>웹폰트를 사용할 경우 <a href="/css/files/font.css" target="_blank" class="link">font.css</a>에 분기한다.</li>
+			<li>그 외 css파일의 분기 기준은 GNB depth 1의 대메뉴를 기준으로 한다.</li>
+			<li>외부 라이브러리에 포함된 css의 경우 라이브러리 이름의 폴더를 생성한 후 관련 css를 해당폴더에 위치한다.</li>
+		</ul>
+		<h2 class="grp_tit">4. 기본규칙</h2>
+		<h3 class="ctgr_tit" id="etc_4_1">4.1 폴더</h3>
+		<ul class="rule_lst">
+			<li>기본 폴더 구조는 다음 그림2와 같이 구성한다.</li>
+			<li>웹폰트를 사용할 경우, 폰트파일은 /css/font/ 폴더에 위치한다.</li>
+			<li>이미지는 각 특징에 따라 폴더에 위치한다. 필요시 구분이 되는 이름으로 폴더명을 추가 생성할 수 있다.<br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>폴더명</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>images</td>
+							<td>하위 이미지 폴더 및 공통이미지</td>
+						</tr>
+						<tr>
+							<td>btn</td>
+							<td>버튼 이미지</td>
+						</tr>
+						<tr>
+							<td>icon</td>
+							<td>아이콘 이미지</td>
+						</tr>
+						<tr>
+							<td>bg</td>
+							<td>배경 이미지</td>
+						</tr>
+						<tr>
+							<td>bann</td>
+							<td>배너 이미지</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="ex">그림2) 폴더구조</span><br>
+				<img src="/images/folder.gif" alt="폴더구조" />
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="etc_4_2">4.2 JAVASCRIPT파일</h3>
+		<ul class="rule_lst">
+			<li>퍼블리싱관련 javascript는 /js/ui.js (인터렉션 포함)에 작성한다.</li>
+			<li>외부 라이브러리를 사용할 경우 라이브러리 이름의 폴더를 생성한 후 관련 js파일을 해당폴더에 위치한다.<br><span class="ex">예) js파일생성 방식</span><br>
+				<img src="/images/files.gif" alt="파일구조" />
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="etc_4_3">4.3 이미지</h3>
+		<ul class="rule_lst">
+			<li>이미지 확장자는 jpg, png, gif, svg를 사용할 수 있다.</li>
+			<li>이미지 확장자가 jpg나 png일 경우, 최적화 작업을 한다.<br>
+				<span class="ex">최적화도구) <a href="https://tinypng.com/" class="link" taget="_blank">Tiny</a></span>
+			</li>
+			<li>svg 이미지 사용시, url 인코딩 방식으로 사용한다. 인코딩 방식 사용 구분은 그림은 동일하나 색상 변경이 있는 이미지에 한해 사용한다.<br>
+				<span class="ex">인코딩도구) <a href="https://yoksel.github.io/url-encoder/" class="link" taget="_blank">url-encoder</a></span><br><br>
+				<span class="ex">예) url encoding 기법</span><br><br>
+<pre><code class="css">
+background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1,.cls-2%7Bfill:none%7D.cls-2%7Bstroke:%23c0c0c0;stroke-width:2px%7D %3C/style%3E%3C/defs%3E%3Cg %3E%3Cpath id='square' d='M0 0h32v32H0z' class='cls-1'/%3E%3Cg transform='translate(2 2)'%3E%3Cg class='cls-2'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5'/%3E%3Ccircle cx='11.5' cy='11.5' r='10.5' class='cls-1'/%3E%3C/g%3E%3Cpath d='M0 0l8.824 8.824' class='cls-2' transform='translate(19.273 19.54)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")'%3E%3Cg class='cls-2'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5'/%3E%3Ccircle cx='11.5' cy='11.5' r='10.5' class='cls-1'/%3E%3C/g%3E%3Cpath d='M0 0l8.824 8.824' class='cls-2' transform='translate(19.273 19.54)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A) no-repeat 0 0;
+</code></pre><br>
+			</li>
+			<li>자주 사용되는 공통이미지의 경우 sprite 기법을 사용한다.<br>
+				<span class="ex">예) sprite 기법</span><br><br>
+				<img src="/images/temp/common.png" alt="sprite 이미지"><br><br>
+			</li>
+			<li>이미지명은 언더바(_)를 구분자로 작성할 수 있다. 단, 마지막 숫자에는 사용하지 않는다.</li>
+			<li>같은 이름의 형태를 갖는다면 맨 마지막에 다음 순서의 숫자로 작성한다.</li>
+			<li>이미지명은 확장자와 상관없이 순차적으로 생성한다.</li>
+			<li>이미지 이름은 아래와 같은 순서와 규칙을 준수하여 작성한다. <span class="accent">폴더명 + 요소 + 방향 + 색상 + 숫자(두자리)</span><br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>의미</th>
+							<th>이름</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="4">방향</td>
+							<td>d</td>
+							<td>down</td>
+						</tr>
+						<tr>
+							<td>u</td>
+							<td>up</td>
+						</tr>
+						<tr>
+							<td>l</td>
+							<td>left</td>
+						</tr>
+						<tr>
+							<td>r</td>
+							<td>right</td>
+						</tr>
+						<tr>
+							<td rowspan="10">색상</td>
+							<td>bu</td>
+							<td>blue</td>
+						</tr>
+						<tr>
+							<td>n</td>
+							<td>navy</td>
+						</tr>
+						<tr>
+							<td>w</td>
+							<td>white</td>
+						</tr>
+						<tr>
+							<td>y</td>
+							<td>yellow</td>
+						</tr>
+						<tr>
+							<td>o</td>
+							<td>orange</td>
+						</tr>
+						<tr>
+							<td>r</td>
+							<td>red</td>
+						</tr>
+						<tr>
+							<td>pu</td>
+							<td>purple</td>
+						</tr>
+						<tr>
+							<td>g</td>
+							<td>green</td>
+						</tr>
+						<tr>
+							<td>ga</td>
+							<td>gray</td>
+						</tr>
+						<tr>
+							<td>b</td>
+							<td>black</td>
+						</tr>
+					</tbody>
+				</table>
+				<span class="ex">예) 이미지명 작성</span><br>
+				<table class="tb">
+					<thead>
+						<tr>
+							<th>이름</th>
+							<th>설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>icon_arr_l_bu01.gif</td>
+							<td>파랑색 좌측 화살표 아이콘 첫번째 이미지</td>
+						</tr>
+						<tr>
+							<td>icon_arr_l_bu02.gif</td>
+							<td>icon_arr_l_bu01 이미지와 유형은 같으나 크기와 디자인이 다른 이미지의 경우 숫자를 카운트하여 생성</td>
+						</tr>
+					</tbody>
+				</table>
+			</li>
+		</ul>
+		<h3 class="ctgr_tit" id="etc_4_4">4.4 크로스브라우징</h3>
+		<ul class="rule_lst">
+			<li>마크업 브라우저 기준은 Chrome과 IE(Internet Explorer) 11+를 기준으로 한다. 단, 파이어폭스, 사파리, 오페라에서 UI가 틀어지지 않음은 담보되어야 한다.</li>
+		</ul>
+	</div>
+</main>
