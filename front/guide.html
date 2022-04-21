@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>리치앤코 퍼블리싱 가이드</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<script src="../assets/js/jquery.1.11.0.min.js"></script>
+	<script src="../assets/js/jquery.ui.1.11.4.min.js"></script>
+	<script src="../assets/js/jquery.syntax/jquery.syntax.js"></script>
+	<script src="../assets/js/jquery.syntax/jquery.syntax.cache.js"></script>
+	<script src="assets/js/library.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="../assets/js/guide.js"></script>
+</head>
+<body>
+<div id="wrap" class="wrap open_nav">
+	<!-- S:CONTAINER -->
+	<div id="container" class="open_nav">
+		<!-- S:NAVIGATION -->
+		<div id="nav">
+			<!-- # 좌측컨텐츠 # -->
+			<div class="wrap_nav">
+				<!-- 사용자정보영역 -->
+				<div class="box_info">
+				</div>
+				<!-- 네비게이션 : SNB -->
+				<div class="nav_snb">
+					<ul>
+						<li><a href="#" data-target="M0">기본구조 - 레이아웃</a></li>
+						<li><a href="#" data-target="M1">TEXT</a></li>
+						<li><a href="#" data-target="M2">TAB</a></li>
+						<li><a href="#" data-target="M3">SCROLL</a></li>
+						<li><a href="#" data-target="M4">BUTTON</a></li>
+						<li><a href="#" data-target="M5">INPUT - CHECKBOX</a></li>
+						<li><a href="#" data-target="M6">INPUT - RADIO</a></li>
+						<li><a href="#" data-target="M7">INPUT - TEXT</a></li>
+						<li><a href="#" data-target="M8">SELECT</a></li>
+						<li><a href="#" data-target="M9">FILE</a></li>
+						<li><a href="#" data-target="M10">DATE PICKER</a></li>
+						<li><a href="#" data-target="M11">TEXTAREA</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- # 컨트롤 # -->
+			<div class="area_control">
+				<a href="#">좌측영역 펼침/닫기</a>
+			</div>
+		</div>
+		<!-- E:NAVIGATION -->
+		<!-- S:CONTENTS -->
+		<div class="content page_guide" style="width:1200px;">
+			<div class="tit_page">
+				<h1>마크업 가이드</h1>
+			</div>
+			<h2 class="tit_guide toggle open" id="M0">기본구조 - 레이아웃</h2>
+			<!-- html -->
+			<fieldset class="guide">
+				<legend>html</legend>
+				<!-- head -->
+				<fieldset class="guide">
+					<legend>head</legend>
+<pre class="syntax brush_css">
+&lt;!doctype html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equipatv="X-UA-Comible" content="ie=edge"&gt;
+&lt;meta name="format-detection" content="telephone=no"&gt;
+&lt;meta name="viewport" content="width=1280"&gt;
+&lt;link rel="icon" type="image/x-icon" href="/favicon.ico"&gt;
+&lt;title&gt;리치앤코&lt;/title&gt;
+&lt;link rel="stylesheet" href="/assets/css/custom.css">
+
+&lt;script type="text/javascript" src="/assets/js/library.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/assets/js/custom.js"&gt;&lt;/script&gt;
+</pre>
+				</fieldset>
+				<!-- body -->
+				<fieldset class="guide">
+					<legend>body</legend>
+					<!-- div#wrapper -->
+					<fieldset class="guide">
+						<legend>div#wrap</legend>
+						<!-- ### layout : header ### -->
+						<fieldset class="guide">
+							<legend>header</legend>
+						</fieldset>
+
+						<!-- ### layout : container ### -->
+						<fieldset class="guide">
+							<legend>div#container : 본문영역</legend>
+							<pre class="syntax brush_css">
+							</pre>
+						</fieldset>
+						<!-- ### footer ### -->
+						<fieldset class="guide">
+							<legend>footer</legend>
+						</fieldset>
+					</fieldset>
+					<!-- ### 기타 ### -->
+					<fieldset class="guide">
+						<legend>div#modal</legend>
+					</fieldset>
+				</fieldset>
+			</fieldset>
+
+			<h2 class="tit_guide toggle open" id="M1">TEXT</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<ul class="desc_list">
+					<li>소속회사 이메일이 없을 경우<br>개인 이메일 주소를 입력하세요.</li>
+					<li>소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</li>
+					<li>소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</li>
+				</ul>
+				<p class="desc_txt">소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</p>
+				<p class="txt_time">인증유효 남은시간 <span class="fc_red">10 : 00</span></p>
+				<ul class="desc_list2">
+					<li>a. 리스트</li>
+					<li>b. 리스트</li>
+					<li>c. 리스트</li>
+				</ul>
+				<p class="desc_txt2">소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</p>
+				<span class="desc_txt2">소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</span>
+				<ul class="desc_list3">
+					<li>a. 리스트</li>
+					<li>b. 리스트</li>
+					<li>c. 리스트</li>
+				</ul>
+				<p class="desc_txt3">소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</p>
+				<span class="desc_txt3">소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.</span>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+<pre class="syntax brush_html">
+&lt;ul class="desc_list"&gt;
+	&lt;li&gt;소속회사 이메일이 없을 경우&lt;br&gt;개인 이메일 주소를 입력하세요.&lt;/li&gt;
+	&lt;li&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/li&gt;
+	&lt;li&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class="desc_txt"&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/p&gt;
+
+&lt;p class="txt_time"&gt;인증유효 남은시간 &lt;span class="fc_red"&gt;10 : 00&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul class="desc_list2"&gt;
+	&lt;li&gt;a. 리스트&lt;/li&gt;
+	&lt;li&gt;b. 리스트&lt;/li&gt;
+	&lt;li&gt;c. 리스트&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class="desc_txt2"&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/p&gt;
+
+&lt;span class="desc_txt2"&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/span&gt;
+
+&lt;ul class="desc_list3"&gt;
+	&lt;li&gt;a. 리스트&lt;/li&gt;
+	&lt;li&gt;b. 리스트&lt;/li&gt;
+	&lt;li&gt;c. 리스트&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class="desc_txt3"&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/p&gt;
+
+&lt;span class="desc_txt3"&gt;소속회사 이메일이 없을 경우 개인 이메일 주소를 입력하세요.&lt;/span&gt;</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M2">TAB</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+
+				<ul class="tab">
+					<li class="active"><a href="#tab-ex1_1">본인/소속정보 수정</a></li>
+					<li><a href="#tab-ex1_2">알림서비스 설정</a></li>
+					<li class="disabled"><a href="#tab-ex1_3">온라인상담</a></li>
+				</ul>
+
+				<div class="tab2">
+					<ul>
+						<li><a href="#tab-ex2_1">진행현황</a></li>
+						<li class="active"><a href="#tab-ex2_2">기본정보</a></li>
+						<li><a href="#tab-ex2_3">온라인상담</a></li>
+					</ul>
+				</div>
+
+				<ul class="tab3">
+					<li class="active"><a href="#tab-ex3_1">진행현황</a></li>
+					<li><a href="#tab-ex3_2">기본정보</a></li>
+				</ul>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;ul class="tab"&gt;
+	&lt;li class="active"&gt;&lt;a href="#tab-ex1_1"&gt;본인/소속정보 수정&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab-ex1_2"&gt;알림서비스 설정&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="disabled"&gt;&lt;a href="#tab-ex1_3"&gt;온라인상담&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab2"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#tab-ex2_1"&gt;진행현황&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="active"&gt;&lt;a href="#tab-ex2_2"&gt;기본정보&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#tab-ex2_3"&gt;온라인상담&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;ul class="tab3"&gt;
+	&lt;li class="active"&gt;&lt;a href="#tab-ex3_1"&gt;진행현황&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab-ex3_2"&gt;기본정보&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+				</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M3">SCROLL</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<div class="agree_box" data-custom-scroll>
+					<p class="inner">
+						제1장 총칭
+						제1조 (목적)
+						이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+						이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+						제1조 (목적)
+						이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+						이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+						제1조 (목적)
+						이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+						이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+						제1조 (목적)
+						이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+						이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+					</p>
+				</div>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;div class="agree_box" data-custom-scroll&gt;
+	&lt;p class="inner"&gt;
+		제1장 총칭
+		제1조 (목적)
+		이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+		이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+		제1조 (목적)
+		이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+		이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+		제1조 (목적)
+		이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+		이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+		제1조 (목적)
+		이 약관은 리치앤코(이하 “회사”라 함)가 운영하는 ‘리치클럽’(또는 ‘richclub’) 사이트에서 제공하는 인터넷 서비스(이하 ‘서비스’라 함)을 이용함에 있어
+		이용자의 권리 의무 및 책임사항과 이용조건 및 절차에 관한 사항을 규정함을 목적으로 합니다.제1장 총칭
+	&lt;/p&gt;
+&lt;/div&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_js">richnco.scroll();</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M4">BUTTON</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<a href="javascript:void(0)" class="btn_default_lg"><span>a.btn_default_lg</span></a>
+				<a href="javascript:void(0)" class="btn_default_disabled_lg"><span>a.btn_default_disabled_lg</span></a>
+				<button type="button" class="btn_default_lg"><span>button.btn_default_lg</span></button>
+				<button type="button" class="btn_default_disabled_lg"><span>button.btn_default_disabled_lg</span></button>
+				<br>
+				<a href="javascript:void(0)" class="btn_default"><span>a.btn_default</span></a>
+				<a href="javascript:void(0)" class="btn_default_disabled"><span>a.btn_default_disabled</span></a>
+				<button type="button" class="btn_default"><span>button.btn_default</span></button>
+				<button type="button" class="btn_default_disabled"><span>button.btn_default_disabled</span></button>
+				<br>
+				<a href="javascript:void(0)" class="btn_default_sm"><span>.btn_default_sm</span></a>
+				<a href="javascript:void(0)" class="btn_default_disabled_sm"><span>.btn_default_disabled_sm</span></a>
+				<button type="button" class="btn_default_sm"><span>.btn_default_sm</span></button>
+				<button type="button" class="btn_default_disabled_sm"><span>.btn_default_disabled_sm</span></button>
+				<br><br>
+				<button type="button" class="btn_orange_lg"><span>button.btn_orange_lg</span></button>
+				<button type="button" class="btn_orange_disabled_lg"><span>button.btn_orange_disabled_lg</span></button>
+				<br>
+				<button type="button" class="btn_orange"><span>button.btn_orange</span></button>
+				<button type="button" class="btn_orange_disabled"><span>button.btn_orange_disabled</span></button>
+				<br>
+				<button type="button" class="btn_orange_sm"><span>button.btn_orange_sm</span></button>
+				<button type="button" class="btn_orange_disabled_sm"><span>button.btn_orange_disabled_sm</span></button>
+				<br><br>
+				<button type="button" class="btn_black_lg"><span>button.btn_black_lg</span></button>
+				<button type="button" class="btn_black_disabled_lg"><span>button.btn_black_disabled_lg</span></button>
+				<br>
+				<button type="button" class="btn_black"><span>button.btn_black</span></button>
+				<button type="button" class="btn_black_disabled"><span>button.btn_black_disabled</span></button>
+				<br>
+				<button type="button" class="btn_black_sm"><span>button.btn_black_sm</span></button>
+				<button type="button" class="btn_black_disabled_sm"><span>button.btn_black_disabled_sm</span></button>
+
+				<div class="btn_area">
+					<button type="button" class="btn_black"><span>제출하기</span></button>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_black"><span>목록으로</span></button>
+					<div class="btn_area_right">
+						<button type="button" class="btn_default"><span>삭제하기</span></button>
+						<button type="button" class="btn_default"><span>수정하기</span></button>
+					</div>
+				</div>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;a href="javascript:void(0)" class="btn_default_lg"&gt;&lt;span&gt;a.btn_default_lg&lt;/span&gt;&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="btn_default_disabled_lg"&gt;&lt;span&gt;a.btn_default_disabled_lg&lt;/span&gt;&lt;/a&gt;
+&lt;button type="button" class="btn_default_lg"&gt;&lt;span&gt;button.btn_default_lg&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_default_disabled_lg"&gt;&lt;span&gt;button.btn_default_disabled_lg&lt;/span&gt;&lt;/button&gt;
+
+&lt;a href="javascript:void(0)" class="btn_default"&gt;&lt;span&gt;a.btn_default&lt;/span&gt;&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="btn_default_disabled"&gt;&lt;span&gt;a.btn_default_disabled&lt;/span&gt;&lt;/a&gt;
+&lt;button type="button" class="btn_default"&gt;&lt;span&gt;button.btn_default&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_default_disabled"&gt;&lt;span&gt;button.btn_default_disabled&lt;/span&gt;&lt;/button&gt;
+
+&lt;a href="javascript:void(0)" class="btn_default_sm"&gt;&lt;span&gt;.btn_default_sm&lt;/span&gt;&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="btn_default_disabled_sm"&gt;&lt;span&gt;.btn_default_disabled_sm&lt;/span&gt;&lt;/a&gt;
+&lt;button type="button" class="btn_default_sm"&gt;&lt;span&gt;.btn_default_sm&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_default_disabled_sm"&gt;&lt;span&gt;.btn_default_disabled_sm&lt;/span&gt;&lt;/button&gt;
+
+&lt;button type="button" class="btn_orange_lg"&gt;&lt;span&gt;button.btn_orange_lg&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_orange_disabled_lg"&gt;&lt;span&gt;button.btn_orange_disabled_lg&lt;/span&gt;&lt;/button&gt;
+
+&lt;button type="button" class="btn_orange"&gt;&lt;span&gt;button.btn_orange&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_orange_disabled"&gt;&lt;span&gt;button.btn_orange_disabled&lt;/span&gt;&lt;/button&gt;
+
+&lt;button type="button" class="btn_orange_sm"&gt;&lt;span&gt;button.btn_orange_sm&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_orange_disabled_sm"&gt;&lt;span&gt;button.btn_orange_disabled_sm&lt;/span&gt;&lt;/button&gt;
+
+&lt;button type="button" class="btn_black_lg"&gt;&lt;span&gt;button.btn_black_lg&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_black_disabled_lg"&gt;&lt;span&gt;button.btn_black_disabled_lg&lt;/span&gt;&lt;/button&gt;
+
+&lt;button type="button" class="btn_black"&gt;&lt;span&gt;button.btn_black&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_black_disabled"&gt;&lt;span&gt;button.btn_black_disabled&lt;/span&gt;&lt;/button&gt;
+
+&lt;button type="button" class="btn_black_sm"&gt;&lt;span&gt;button.btn_black_sm&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn_black_disabled_sm"&gt;&lt;span&gt;button.btn_black_disabled_sm&lt;/span&gt;&lt;/button&gt;
+
+&lt;div class="btn_area"&gt;
+	&lt;button type="button" class="btn_black"&gt;&lt;span&gt;제출하기&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="btn_area"&gt;
+	&lt;button type="button" class="btn_black"&gt;&lt;span&gt;목록으로&lt;/span&gt;&lt;/button&gt;
+	&lt;div class="btn_area_right"&gt;
+		&lt;button type="button" class="btn_default"&gt;&lt;span&gt;삭제하기&lt;/span&gt;&lt;/button&gt;
+		&lt;button type="button" class="btn_default"&gt;&lt;span&gt;수정하기&lt;/span&gt;&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M5">INPUT - CHECKBOX</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<input type="checkbox" checked>
+				<input type="checkbox">
+				<input type="checkbox" disabled>
+				<br>
+				<input type="checkbox" id="test1">
+				<label for="test1">Test2_1</label>
+				<input type="checkbox" id="test2">
+				<label for="test2">test2_2</label>
+				<input type="checkbox" id="test3" checked disabled>
+				<label for="test3">test2_3</label>
+				<br>
+				<label>
+					<input type="checkbox" checked> test3_1
+				</label>
+				<label>
+					<input type="checkbox"> test3_2
+				</label>
+				<label>
+					<input type="checkbox" disabled> test3_3
+				</label>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;input type="checkbox" checked&gt;
+&lt;input type="checkbox"&gt;
+&lt;input type="checkbox" disabled&gt;
+
+&lt;input type="checkbox" id="test1"&gt;
+&lt;label for="test1"&gt;Test2_1&lt;/label&gt;
+&lt;input type="checkbox" id="test2"&gt;
+&lt;label for="test2"&gt;test2_2&lt;/label&gt;
+&lt;input type="checkbox" id="test3" checked disabled&gt;
+&lt;label for="test3"&gt;test2_3&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" checked&gt;
+	test3_1
+&lt;/label&gt;
+&lt;label&gt;
+	&lt;input type="checkbox"&gt;
+	test3_2
+&lt;/label&gt;
+&lt;label&gt;
+	&lt;input type="checkbox" disabled&gt;
+	test3_3
+&lt;/label&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_js">richnco.checkbox();</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M6">INPUT - RADIO</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<input type="radio" name="radio1" checked>
+				<input type="radio" name="radio1">
+				<input type="radio" name="radio1">
+				<input type="radio" name="radio1">
+				<input type="radio" name="radio1" checked disabled>
+				<br>
+				<input type="radio" name="radio2" id="radio2_1" checked>
+				<label for="radio2_1">Radio2_1</label>
+				<input type="radio" name="radio2" id="radio2_2">
+				<label for="radio2_2">radio2_3</label>
+				<input type="radio" name="radio2" id="radio2_3" disabled>
+				<label for="radio2_3">radio2_3</label>
+				<br>
+				<label>
+					<input type="radio" name="radio3" checked>
+					radio3_1
+				</label>
+				<label>
+					<input type="radio" name="radio3">
+					radio3_2
+				</label>
+				<label>
+					<input type="radio" name="radio3" disabled>
+					radio3_3
+				</label>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;input type="radio" name="radio1" checked&gt;
+&lt;input type="radio" name="radio1"&gt;
+&lt;input type="radio" name="radio1"&gt;
+&lt;input type="radio" name="radio1"&gt;
+&lt;input type="radio" name="radio1" checked disabled&gt;
+
+&lt;input type="radio" name="radio2" id="radio2_1" checked&gt;
+&lt;label for="radio2_1"&gt;Radio2_1&lt;/label&gt;
+&lt;input type="radio" name="radio2" id="radio2_2"&gt;
+&lt;label for="radio2_2"&gt;radio2_3&lt;/label&gt;
+&lt;input type="radio" name="radio2" id="radio2_3" disabled&gt;
+&lt;label for="radio2_3"&gt;radio2_3&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="radio" name="radio3" checked&gt;
+	radio3_1
+&lt;/label&gt;
+&lt;label&gt;
+	&lt;input type="radio" name="radio3"&gt;
+	radio3_2
+&lt;/label&gt;
+&lt;label&gt;
+	&lt;input type="radio" name="radio3" disabled&gt;
+	radio3_3
+&lt;/label&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_js">richnco.radio();</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M7">INPUT - TEXT</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<input type="text" placeholder="text">
+				<input type="tel" placeholder="tel">
+				<input type="number" placeholder="number">
+				<input type="password" placeholder="password">
+				<input type="email" placeholder="email">
+				<br>
+				<input type="text" placeholder="text" disabled>
+				<input type="tel" placeholder="tel" disabled>
+				<input type="number" placeholder="number" disabled>
+				<input type="password" placeholder="password" disabled>
+				<input type="email" placeholder="email" disabled>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;input type="text" placeholder="text"&gt;
+&lt;input type="tel" placeholder="tel"&gt;
+&lt;input type="number" placeholder="number"&gt;
+&lt;input type="password" placeholder="password"&gt;
+&lt;input type="email" placeholder="email"&gt;
+
+&lt;input type="text" placeholder="text" disabled&gt;
+&lt;input type="tel" placeholder="tel" disabled&gt;
+&lt;input type="number" placeholder="number" disabled&gt;
+&lt;input type="password" placeholder="password" disabled&gt;
+&lt;input type="email" placeholder="email" disabled&gt;
+				</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M8">SELECT</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<select>
+					<option value="1">select1 select1 select1</option>
+					<option value="2" disabled>select2</option>
+					<option value="3">select3</option>
+					<option value="4">select4</option>
+					<option value="5">select5</option>
+					<option value="6">select6</option>
+					<option value="7">select7</option>
+					<option value="8">select8</option>
+					<option value="9" selected>select9</option>
+					<option value="10">select10</option>
+					<option value="11">select11</option>
+					<option value="12">select12</option>
+					<option value="13">select13</option>
+					<option value="14">select14</option>
+					<option value="15">select15</option>
+					<option value="16">select16</option>
+					<option value="17">select17</option>
+				</select>
+				<select disabled>
+					<option value="1">select1</option>
+					<option value="2">select2</option>
+					<option value="3">select3</option>
+				</select>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;select&gt;
+	&lt;option value="1"&gt;select1 select1 select1&lt;/option&gt;
+	&lt;option value="2" disabled&gt;select2&lt;/option&gt;
+	&lt;option value="3"&gt;select3&lt;/option&gt;
+	&lt;option value="4"&gt;select4&lt;/option&gt;
+	&lt;option value="5"&gt;select5&lt;/option&gt;
+	&lt;option value="6"&gt;select6&lt;/option&gt;
+	&lt;option value="7"&gt;select7&lt;/option&gt;
+	&lt;option value="8"&gt;select8&lt;/option&gt;
+	&lt;option value="9" selected&gt;select9&lt;/option&gt;
+	&lt;option value="10"&gt;select10&lt;/option&gt;
+	&lt;option value="11"&gt;select11&lt;/option&gt;
+	&lt;option value="12"&gt;select12&lt;/option&gt;
+	&lt;option value="13"&gt;select13&lt;/option&gt;
+	&lt;option value="14"&gt;select14&lt;/option&gt;
+	&lt;option value="15"&gt;select15&lt;/option&gt;
+	&lt;option value="16"&gt;select16&lt;/option&gt;
+	&lt;option value="17"&gt;select17&lt;/option&gt;
+&lt;/select&gt;
+&lt;select disabled&gt;
+	&lt;option value="1"&gt;select1&lt;/option&gt;
+	&lt;option value="2"&gt;select2&lt;/option&gt;
+	&lt;option value="3"&gt;select3&lt;/option&gt;
+&lt;/select&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_js">richnco.select();</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M9">FILE</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<input type="file" style="width:300px"><br><br>
+				<input type="file" multiple><br><br>
+				<input type="file"><br><br>
+				<input type="file" disabled><br><br>
+				<input type="file" multiple data-btn_type>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;input type="file" style="width:300px"&gt;
+&lt;input type="file" multiple&gt;
+&lt;input type="file"&gt;
+&lt;input type="file" disabled&gt;
+&lt;input type="file" multiple data-btn_type&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_js">richnco.file();</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M10">DATEPICKER</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d">
+				<input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d" disabled>
+				<div class="ipt-daterange">
+					<input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d">
+					<span>~</span>
+					<input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d">
+				</div>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+<pre class="syntax brush_html">
+&lt;input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d"&gt;
+&lt;input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d" disabled&gt;
+&lt;div class="ipt-daterange"&gt;
+	&lt;input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d"&gt;
+	&lt;span&gt;~&lt;/span&gt;
+	&lt;input type="text" data-datepicker data-mindate="-3d" data-maxdate="+7d"&gt;
+&lt;/div&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+<pre class="syntax brush_js">richnco.datepicker();</pre>
+			</div>
+
+			<h2 class="tit_guide toggle open" id="M11">TEXTAREA</h2>
+			<h4 class="tit_sub1">View</h4>
+			<div class="view">
+				<textarea cols="30" rows="3" maxlength="300" placeholder=""></textarea><br>
+				<textarea cols="30" rows="3" maxlength="200" disabled></textarea>
+			</div>
+			<h4 class="tit_sub1">Code</h4>
+			<div class="guide_code">
+				<pre class="syntax brush_html">
+&lt;textarea cols="30" rows="3" maxlength="300"&gt;&lt;/textarea&gt;
+&lt;textarea cols="30" rows="3" maxlength="200" disabled&gt;&lt;/textarea&gt;</pre>
+			</div>
+			<h4 class="tit_sub1">JS</h4>
+			<div class="guide_code">
+<pre class="syntax brush_js">richnco.textarea();</pre>
+			</div>
+		</div>
+		<!-- E:CONTENTS -->
+	</div>
+	<!-- E:CONTAINER -->
+</div>
+<script type="text/javascript">
+	jQuery(function ($) {
+		$.syntax({theme: 'grey', layout: 'fixed', replace: true});
+	});
+</script>
+</body>
+</html>
