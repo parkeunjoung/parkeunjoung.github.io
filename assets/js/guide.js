@@ -147,6 +147,7 @@ var ui;
 			$("#load_navigation").load("nav.html");
 			$("#load_contents").load("contents.html",function(){
 				$.syntax({theme: 'grey', layout: 'fixed', replace: true});
+				$(".wrap_nav").mCustomScrollbar();
 			});
 			$("#load_footer").load("footer.html");
 		}
