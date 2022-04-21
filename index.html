@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<title>리치앤코 퍼블리싱 컨벤션</title>
 	<link rel="shortcut icon" sizes="96x96" href="/assets/img/favicon.png">
+	<link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="/assets/css/common.css">
 	<script src="/assets/js/jquery.1.11.0.min.js"></script>
 	<script src="/assets/js/jquery.ui.1.11.4.min.js"></script>
 	<script src="/assets/js/jquery.syntax/jquery.syntax.js"></script>
 	<script src="/assets/js/jquery.syntax/jquery.syntax.cache.js"></script>
+	<script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="/assets/js/guide.js"></script>
 </head>
 <body>
@@ -34,13 +36,22 @@
 	<!-- <iframe src="guide.html" frameborder="0" style="width:100%;height:calc(100vh - 50px); vertical-align:top"></iframe> -->
 </div>
 <!-- E:WRAP -->
-<!-- <script>
-	$(document).ready(function(){
-		$(".guide_header a").click(function(){
-			$("iframe").attr("src", $(this).attr("href"));
-			return false;
-		});
+<script>
+	$(window).on("load",function(){
+		// Code View
+		$.syntax({theme: 'grey', layout: 'fixed', replace: true});
+
+		// $(".guide_header a").click(function(){
+		// 	$("iframe").attr("src", $(this).attr("href"));
+		// 	return false;
+		// });
 	});
-</script> -->
+	// Scroll
+	(function($){
+			$(window).on("load",function(){
+				$(".wrap_nav").mCustomScrollbar();
+			});
+	})(jQuery);
+</script>
 </body>
 </html>
