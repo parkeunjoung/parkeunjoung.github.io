@@ -145,7 +145,9 @@ var ui;
 			/* load contents */
 			$("#load_header").load("header.html");
 			$("#load_navigation").load("nav.html");
-			$("#load_contents").load("contents.html");
+			$("#load_contents").load("contents.html",function(){
+				$.syntax({theme: 'grey', layout: 'fixed', replace: true});
+			});
 			$("#load_footer").load("footer.html");
 		}
 	});

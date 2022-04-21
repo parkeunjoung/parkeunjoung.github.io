@@ -33,25 +33,13 @@
 		<!-- E:FOOTER -->
 	</div>
 	<!-- E:CONTAINER -->
-	<!-- <iframe src="guide.html" frameborder="0" style="width:100%;height:calc(100vh - 50px); vertical-align:top"></iframe> -->
 </div>
 <!-- E:WRAP -->
 <script>
 	$(window).on("load",function(){
 		// Code View
-		$.syntax({theme: 'grey', layout: 'fixed', replace: true});
-
-		// $(".guide_header a").click(function(){
-		// 	$("iframe").attr("src", $(this).attr("href"));
-		// 	return false;
-		// });
+		$(".wrap_nav").mCustomScrollbar();
 	});
-	// Scroll
-	(function($){
-			$(window).on("load",function(){
-				$(".wrap_nav").mCustomScrollbar();
-			});
-	})(jQuery);
 </script>
 </body>
 </html>
