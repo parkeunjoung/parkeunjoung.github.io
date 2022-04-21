@@ -88,7 +88,7 @@ var ui;
 		navAside : function(){
 			var $aside = $('#nav');
 			var $aside_area = $('#nav .wrap_nav');
-			var $aside_snb = $aside.find('.nav_snb');
+			var $aside_snb = $aside.find('.nav_lnb');
 			var $aside_ctrl = $aside.find('.area_control a');
 
 			//좌측영역 영역 디스플레이
@@ -113,17 +113,17 @@ var ui;
 
 
 			//snb 토글
-			$(document).on("click", '.nav_snb a', function(e) {
+			$(document).on("click", '.nav_lnb a', function(e) {
 				if($(this).next('ul').length){
 					if(!$(this).parent('li').hasClass('open')) $(this).parent('li').addClass('open');
 					else $(this).parent('li').removeClass('open');
 				}else{
-					$('.nav_snb li').removeClass('active');
+					$('.nav_lnb li').removeClass('active');
 					$(this).parent('li').addClass('active');
 				}
 			});
 
-			$(document).on('click','.nav_snb a',function(){
+			$(document).on('click','.nav_lnb a',function(){
 				var _target = $(this).attr('data-target');
 				$('html, body').animate({scrollTop : $('#'+_target).offset().top - 50} , 300);
 				return false;
